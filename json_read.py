@@ -1,0 +1,29 @@
+# READ
+
+# import json
+
+# f=open("data.json","r")
+
+# content = json.load(f)
+
+# print(content)
+
+# print(content[0]["name"],content[0]["age"])  # print(content[0]) print(content[1])
+# print(content[1]["name"],content[1]["age"])
+
+# f.close()
+
+#WRITE
+
+import json
+
+content = [
+    {"title": "Book1", "author": "John", "price": 200},
+    {"title": "Book2", "author": "Sam", "price": 300}
+]
+
+f = open("book.json", "w")
+
+json.dump(content, f)
+
+f.close()
